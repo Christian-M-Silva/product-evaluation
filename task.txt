@@ -5,16 +5,21 @@
     - valor: number
     - avaliação: 1,2,3,4,5
     - descrption: string
+    - id: number
+
+- Usando redux irei armazenar as actions e os dados aqui
+    - O valor armazenando é do tipo IProduct[]
+    - Ele iniciará o array contendo valores imaginarios, ai aqui incluo os meus produtos só para simular
+    - Ação de editar avaliação de um produto
+        - Espera receber o id: number e a nota de avaliação sendo de 1 até 5
+        - Pesquisa no array de produtos usando o id e altera a avaliação dele com a nova avaliação 
 
 - Criar um card component estiliza com taiwldin
     - Ele espera receber props do tipo IProduct
     - O nome do produto a esquerda e o valor na direita
     - O card por padrão só aparece essas informações, ao clicar nele, deverá fechar todos os outros cards e expandir ele com as descrições, clicando de novo fecha ele
-
-
-- Usando redux irei armazenar as actions e os dados aqui
-    - O valor armazenando é do tipo IProduct[]
-    - Ele iniciará o array contendo valores imaginarios, ai aqui incluo os meus produtos só para simular
+    - A avaliação do card só aparece quando o card está expandido 
+    - Ao usuario alterar avaliação daquele produto, deverá ser chamado a função de alterar produto do redux
 
 - No arquivo APP criar um .map usando o card component para renderizar os produtos puxando os valores do redux
 
@@ -22,8 +27,9 @@
     - Teste de interação com card
         - Pegar um dos cards
         - Simular o click
-        - Ver se a descrição apareceu em tela
-        - Verificar se nenhum outro card está com a descrição aparecendo
+        - Ver se a descrição E avaliação apareceu em tela
+        - Verificar se nenhum outro card está com a descrição ou avaliação aparecendo
+        - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
         - Simular outro click
         - A descrição tem que sumir da tela
         - Verificar se nenhum outro card está com a descrição aparecendo
