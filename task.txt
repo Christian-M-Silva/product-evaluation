@@ -22,11 +22,11 @@ x Criar um card component estiliza com taiwldin
     x A avaliação do card só aparece quando o card está expandido 
     x Ao usuario alterar avaliação daquele produto, deverá ser chamado a função de alterar produto do redux
 
-- No arquivo APP criar um .map usando o card component para renderizar os produtos puxando os valores do redux
-    - Criar um useState de media de valor
-    - Criar uma função que usa o hook de useCallback, que o array de dependencia é o valor armazenado no redux, quando alterado essa função será chamado
-        - Dentro dessa função ele setará o valor do useState da media de valor, para isso pegará todas as avaliações dos produtos, somará tudo e após isso dividirá pela quantidade de produtos que tem no array o resultado disso é o que será o novo valor do useState
-    - Esse useState será exibido ai aqui posso ver um local apropriado na tela
+x No arquivo APP criar um .map usando o card component para renderizar os produtos puxando os valores do redux
+    x Criar um useState de media de valor
+    x Criar uma função que usa o hook de useEffect, que o array de dependencia é o valor armazenado no redux, quando alterado essa função será chamado
+        x Dentro dessa função ele setará o valor do useState da media de valor, para isso pegará todas as avaliações dos produtos, somará tudo e após isso dividirá pela quantidade de produtos que tem no array o resultado disso é o que será o novo valor do useState
+    x Esse useState será exibido ai aqui posso ver um local apropriado na tela
 
 - TESTES
     - Teste de interação com card

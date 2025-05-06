@@ -17,11 +17,10 @@ export function Card(propsCard: IProduct) {
 
     return (
         <div
-            className="w-full max-w-md mx-auto cursor-pointer transition-all duration-300 border border-gray-300 rounded-2xl shadow-sm overflow-hidden hover:shadow-md"
-            onClick={toggleCard}
+            className="w-full max-w-md mx-auto transition-all duration-300 border border-gray-300 rounded-2xl shadow-sm overflow-hidden hover:shadow-md my-2"
         >
             {/* Cabeçalho com nome e valor */}
-            <div className="flex justify-between items-center p-4 bg-white">
+            <div className="flex justify-between items-center p-4 bg-white cursor-pointer" onClick={toggleCard}>
                 <span className="text-lg font-semibold text-gray-800">{propsCard.name}</span>
                 <span className="text-lg font-bold text-green-600">R$ {propsCard.value}</span>
             </div>
