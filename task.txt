@@ -1,11 +1,11 @@
-- Iniciar aplicação com CRA com ts
+X Iniciar aplicação com CRA com ts
 
-- Criar interface de produto chamado IProduct
-    - Nome: string
-    - valor: number
-    - avaliação: 1,2,3,4,5
-    - descrption: string
-    - id: number
+x Criar interface de produto chamado IProduct
+    x Nome: string
+    x valor: number
+    x avaliação: 1,2,3,4,5
+    x descrption: string
+    x id: number
 
 - Usando redux irei armazenar as actions e os dados aqui
     - O valor armazenando é do tipo IProduct[]
