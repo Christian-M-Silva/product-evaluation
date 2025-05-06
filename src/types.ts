@@ -5,3 +5,5 @@ export interface IProduct{
     description: string,
     id: number
 }
+
+export type ParamEditEvaluation = Pick<IProduct, 'id'| 'evaluation'>

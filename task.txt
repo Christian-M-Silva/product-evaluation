@@ -8,12 +8,12 @@ x Criar interface de produto chamado IProduct
     x id: number
 
 - Usando redux irei armazenar as actions e os dados aqui
-    - O valor armazenando é do tipo IProduct[]
-    - Ele iniciará o array contendo valores imaginarios, ai aqui incluo os meus produtos só para simular
-    - Ação de editar avaliação de um produto
-        - Espera receber o id: number e a nota de avaliação sendo de 1 até 5
-        - Pesquisa no array de produtos usando o id e altera a avaliação dele com a nova avaliação 
-    - Finalizar de configurar o redux
+    x O valor armazenando é do tipo IProduct[]
+    x Ele iniciará o array contendo valores imaginarios, ai aqui incluo os meus produtos só para simular
+    x Ação de editar avaliação de um produto
+        x Espera receber o id: number e a nota de avaliação sendo de 1 até 5
+        x Pesquisa no array de produtos usando o id e altera a avaliação dele com a nova avaliação 
+    x Finalizar de configurar o redux
 
 - Criar um card component estiliza com taiwldin
     - Ele espera receber props do tipo IProduct
