@@ -15,12 +15,12 @@ x Criar interface de produto chamado IProduct
         x Pesquisa no array de produtos usando o id e altera a avaliação dele com a nova avaliação 
     x Finalizar de configurar o redux
 
-- Criar um card component estiliza com taiwldin
-    - Ele espera receber props do tipo IProduct
-    - O nome do produto a esquerda e o valor na direita
-    - O card por padrão só aparece essas informações, ao clicar nele, deverá fechar todos os outros cards e expandir ele com as descrições, clicando de novo fecha ele
-    - A avaliação do card só aparece quando o card está expandido 
-    - Ao usuario alterar avaliação daquele produto, deverá ser chamado a função de alterar produto do redux
+x Criar um card component estiliza com taiwldin
+    x Ele espera receber props do tipo IProduct
+    x O nome do produto a esquerda e o valor na direita
+    x O card por padrão só aparece essas informações, ao clicar nele, expandir ele com as descrições, clicando de novo fecha ele
+    x A avaliação do card só aparece quando o card está expandido 
+    x Ao usuario alterar avaliação daquele produto, deverá ser chamado a função de alterar produto do redux
 
 - No arquivo APP criar um .map usando o card component para renderizar os produtos puxando os valores do redux
     - Criar um useState de media de valor
@@ -33,7 +33,6 @@ x Criar interface de produto chamado IProduct
         - Pegar um dos cards
         - Simular o click
         - Ver se a descrição E avaliação apareceu em tela
-        - Verificar se nenhum outro card está com a descrição ou avaliação aparecendo
         - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
         - Verificar se ao alterar o valor da avaliação o hook está sendo acionado
         - Simular outro click
