@@ -13,6 +13,7 @@
     - Ação de editar avaliação de um produto
         - Espera receber o id: number e a nota de avaliação sendo de 1 até 5
         - Pesquisa no array de produtos usando o id e altera a avaliação dele com a nova avaliação 
+    - Finalizar de configurar o redux
 
 - Criar um card component estiliza com taiwldin
     - Ele espera receber props do tipo IProduct
@@ -22,6 +23,10 @@
     - Ao usuario alterar avaliação daquele produto, deverá ser chamado a função de alterar produto do redux
 
 - No arquivo APP criar um .map usando o card component para renderizar os produtos puxando os valores do redux
+    - Criar um useState de media de valor
+    - Criar uma função que usa o hook de useCallback, que o array de dependencia é o valor armazenado no redux, quando alterado essa função será chamado
+        - Dentro dessa função ele setará o valor do useState da media de valor, para isso pegará todas as avaliações dos produtos, somará tudo e após isso dividirá pela quantidade de produtos que tem no array o resultado disso é o que será o novo valor do useState
+    - Esse useState será exibido ai aqui posso ver um local apropriado na tela
 
 - TESTES
     - Teste de interação com card
@@ -30,6 +35,7 @@
         - Ver se a descrição E avaliação apareceu em tela
         - Verificar se nenhum outro card está com a descrição ou avaliação aparecendo
         - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
+        - Verificar se ao alterar o valor da avaliação o hook está sendo acionado
         - Simular outro click
         - A descrição tem que sumir da tela
         - Verificar se nenhum outro card está com a descrição aparecendo
