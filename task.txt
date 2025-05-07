@@ -30,7 +30,6 @@ x No arquivo APP criar um .map usando o card component para renderizar os produt
 
 X TESTES
     x Teste de interação com card
-        x Ver se a descrição E avaliação apareceu em tela
+        x Ver se a descrição E avaliação apareceu em tela e desaparece após o click
         - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
         - Verificar se ao alterar o valor da avaliação o hook está sendo acionado
-        - Verificar se a descrição sumir da tela

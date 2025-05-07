@@ -4,7 +4,7 @@ import { Provider } from "react-redux"
 import { store } from "../../store"
 
 describe('CardComponent', () => {
-    it('should show description and evaluation', () => {
+    it('should show and hide description and evaluation', () => {
         render(
             <Provider store={store}>
                 <Card name={"Teste name"} value={0} evaluation={2} description={"Descrição"} id={0} />
@@ -17,5 +17,10 @@ describe('CardComponent', () => {
 
         expect(screen.getByText('Avaliação:')).toBeInTheDocument()
         expect(screen.getByText('Descrição')).toBeInTheDocument()
+
+        fireEvent.click(card)
+
+        expect(screen.queryByText('Avaliação:')).not.toBeInTheDocument()
+        expect(screen.queryByText('Descrição')).not.toBeInTheDocument()
     })
 })
