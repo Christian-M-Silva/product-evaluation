@@ -28,13 +28,9 @@ x No arquivo APP criar um .map usando o card component para renderizar os produt
         x Dentro dessa função ele setará o valor do useState da media de valor, para isso pegará todas as avaliações dos produtos, somará tudo e após isso dividirá pela quantidade de produtos que tem no array o resultado disso é o que será o novo valor do useState
     x Esse useState será exibido ai aqui posso ver um local apropriado na tela
 
-- TESTES
-    - Teste de interação com card
-        - Pegar um dos cards
-        - Simular o click
-        - Ver se a descrição E avaliação apareceu em tela
+X TESTES
+    x Teste de interação com card
+        x Ver se a descrição E avaliação apareceu em tela
         - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
         - Verificar se ao alterar o valor da avaliação o hook está sendo acionado
-        - Simular outro click
-        - A descrição tem que sumir da tela
-        - Verificar se nenhum outro card está com a descrição aparecendo
+        - Verificar se a descrição sumir da tela
