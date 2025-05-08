@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "./store";
 import { Card } from "./components/CardComponents/CardComponent";
 import { useEffect, useState } from "react";
+import { mediaProduct } from "./utils/utils";
 
 function App() {
   const products = useSelector((state: RootState) => state.product);
@@ -9,9 +10,7 @@ function App() {
 
   useEffect(() => {
     setValueMedia(() => {
-      const sumAllEvaluation = products.reduce((accumulator, object) => accumulator + object.evaluation, 0)
-
-      return sumAllEvaluation / products.length
+      return mediaProduct(products)
     })
   }, [products]);
 
