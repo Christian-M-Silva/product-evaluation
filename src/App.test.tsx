@@ -3,7 +3,7 @@ import { IProduct } from "./types";
 import { mediaProduct } from "./utils/utils";
 import { store } from "./store";
 import App from "./App";
-import { render, screen, fireEvent, getByText } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 describe('AppComponent', () => {
