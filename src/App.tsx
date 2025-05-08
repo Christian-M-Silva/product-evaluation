@@ -8,7 +8,6 @@ function App() {
   const [valueMedia, setValueMedia] = useState(0)
 
   useEffect(() => {
-    console.log('Aquiii')
     setValueMedia(() => {
       const sumAllEvaluation = products.reduce((accumulator, object) => accumulator + object.evaluation, 0)
 

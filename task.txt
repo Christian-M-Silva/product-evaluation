@@ -31,5 +31,12 @@ x No arquivo APP criar um .map usando o card component para renderizar os produt
 X TESTES
     x Teste de interação com card
         x Ver se a descrição E avaliação apareceu em tela e desaparece após o click
+        - Verificar se o calculo da média está certo (ESTOU PLANEJANDO PRIMEIRO O FLUXO DE TESTES)
+            - Criar um teste para a tela de APP
+            - Como aqui o valor já vem inicialmente chumbado, preciso ver se o valor da média é 4.2
         - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
-        - Verificar se ao alterar o valor da avaliação o hook está sendo acionado
+            - No teste para o APP eu renderizo o app
+            - Pego o card que tem Smartphone X1
+            - Desse card eu faço ação de click
+            - Dessa ação de click vai mostrar o input eu pego esse input e altero o valor dele para 5
+            - Ai a expectativa é que a média seja 4.4
