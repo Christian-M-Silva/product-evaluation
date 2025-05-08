@@ -5,7 +5,6 @@ import { AppDispatch } from "../../store";
 import { editEvaluation } from "../../store/ProductSlice";
 
 export function Card(propsCard: IProduct) {
-    console.log('Card')
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleCard = () => {
