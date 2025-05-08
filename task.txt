@@ -34,9 +34,9 @@ X TESTES
         X Verificar se o calculo da média está certo
             X Criar um teste para a tela de APP
             x Como aqui o valor já vem inicialmente chumbado, preciso ver se o valor da média é 4.2
-        - Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
-            - No teste para o APP eu renderizo o app
-            - Pego o card que tem Smartphone X1
-            - Desse card eu faço ação de click
-            - Dessa ação de click vai mostrar o input eu pego esse input e altero o valor dele para 5
-            - Ai a expectativa é que a média seja 4.4
+        X Verificar se ao alterar o valor da avaliação a função do redux está sendo chamada mesmo
+            X No teste para o APP eu renderizo o app
+            x Pego o card que tem Smartphone X1
+            x Desse card eu faço ação de click
+            X Dessa ação de click vai mostrar o input eu pego esse input e altero o valor dele para 5
+            X Ai a expectativa é que a média seja 4.4
